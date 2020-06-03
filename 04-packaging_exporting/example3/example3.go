@@ -6,9 +6,8 @@
 package main
 
 import (
+	"./counters"
 	"fmt"
-
-	"github.com/ArdanStudios/gotraining/04-packaging_exporting/example3/counters"
 )
 
 // main is the entry point for the application.

@@ -11,17 +11,22 @@
 // _value that the pointer points to_.
 package main
 
+import "fmt"
+
 // Add imports.
 
 // main is the entry point for the application.
 func main() {
 	// Declare an integer variable with the value of 20.
+	var value int = 20
 
 	// Display the address of and value of the variable.
-
+	fmt.Println(&value, value)
 	// Declare a pointer variable of type int. Assign the
 	// address of the integer variable above.
+	var ptr *int = &value
 
 	// Display the address of, value of and the value the pointer
 	// points to.
+	fmt.Println(&ptr, ptr, *ptr)
 }

@@ -13,14 +13,26 @@
 package main
 
 // Add imports.
+import (
+	"./toy"
+	"fmt"
+)
 
 // main is the entry point for the application.
 func main() {
 	// Use the New function from the toy package to create a value of
 	// type toy.
+	var newToy *toy.Toy = toy.New("name", 10, 1, 1)
 
 	// Use the methods from the toy value to set some initialize
 	// values.
+	newToy.UpdateOnHand(5)
+	newToy.UpdateSold(-1)
 
 	// Display each field separately from the toy value.
+	fmt.Println(newToy)
+	fmt.Println(newToy.Name)
+	fmt.Println(newToy.Weight)
+	fmt.Println(newToy.OnHand())
+	fmt.Println(newToy.Sold())
 }

@@ -15,6 +15,7 @@ package main
 func main() {
 	// Declare an array of 5 strings set to its zero value.
 
+
 	// Declare an array of 5 strings and pre-populate it with names.
 
 	// Assign the populated array to the array of zero values.
